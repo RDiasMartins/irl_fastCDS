@@ -8,7 +8,16 @@
 2. Config.checkPermission
      -  Quem vai poder usar o sistema
 
-##/fastCDS
+## /fastCDS
 ### Inicia a coleta de CDS, tecla [E] envia a coordenada e tecla [G] altera o modelo.
 
-####Os modelos são predefinidos pelos padrões frequentemente utilizados, porém é possível personaliza-lo no arquivo server.lua.
+#### Os modelos são predefinidos pelos padrões frequentemente utilizados, porém é possível personaliza-lo no arquivo server.lua.
+
+#### Modelo = 1
+X,Y,Z,H
+
+#### Modelo = 2
+['x'] = X, ['y'] = , ['z'] = , ['h'] =  h
+
+#### Modelo = 3
+x = x, y = y, z = z, h = h
