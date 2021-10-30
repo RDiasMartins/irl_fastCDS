@@ -7,6 +7,8 @@
      - Link do webhook para enviar a mensagem com as coordenadas
 2. Config.checkPermission
      -  Quem vai poder usar o sistema
-3. Config.choiceModel
-     -  Modelos pré estabelecidos de CDS
 
+##/fastCDS
+### Inicia a coleta de CDS, tecla [E] envia a coordenada e tecla [G] altera o modelo.
+
+####Os modelos são predefinidos pelos padrões frequentemente utilizados, porém é possível personaliza-lo no arquivo server.lua.
