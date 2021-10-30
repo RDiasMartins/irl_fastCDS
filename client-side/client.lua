@@ -47,6 +47,10 @@ function startThread()
                     if IsControlJustPressed(1,38) then             
                          TriggerServerEvent("sendCDS")
                     end
+
+                    if IsControlJustPressed(1,47) then             
+                        TriggerServerEvent("toogleModel")
+                   end
                 end
                 Citizen.Wait(timeDistance)
             end

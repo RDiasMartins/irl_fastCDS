@@ -20,6 +20,7 @@ function SendWebhookMessage(webhook,message)
 	end
 end
 
+local choiceModel = 1
 local msg = ""
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- TOOGLE
@@ -56,12 +57,12 @@ AddEventHandler("sendCDS",function()
 	if user_id then
 		local x,y,z,h = vRPclient.getPositions(source)
 
-		if Config.choiceModel == 1 then
+		if choiceModel == 1 then
 			msg = "```prolog\n "..x..","..y..","..z..","..h.."\r```"
 		
-		elseif Config.choiceModel == 2 then
+		elseif choiceModel == 2 then
 			msg = "```prolog\n['x'] = "..x..", ['y'] = "..y..", ['z'] = "..z..", ['h'] = "..h.."\r```"
-		elseif Config.choiseModel == 3 then
+		elseif choiseModel == 3 then
 			msg = "```prolog\nx = "..x..", y = "..y..", z = "..z..", h = "..h.."\r```"
 		end
 
@@ -69,4 +70,20 @@ AddEventHandler("sendCDS",function()
 		SendWebhookMessage(Config.webhookCDS,msg)
     end	
 end)
+
+RegisterNetEvent("toogleModel")
+AddEventHandler("toogleModel",function()
+    local source = source
+	local user_id = vRP.getUserId(source)
+	
+	if user_id then
+		if choiceModel == 3 then
+			choiceModel = 1
+			TriggerClientEvent("Notify",source,"amarelo","Modelo alterado.",5000)
+		else 
+			choiceModel = choiceModel + 1
+		end
+    end	
+end)
+
 
