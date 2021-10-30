@@ -14,10 +14,10 @@
 #### Os modelos são predefinidos pelos padrões frequentemente utilizados, porém é possível personaliza-lo no arquivo server.lua.
 
 #### Modelo = 1
-X,Y,Z,H
+x,y,z,h
 
 #### Modelo = 2
-['x'] = X, ['y'] = , ['z'] = , ['h'] =  h
+['x'] = x, ['y'] = y, ['z'] = , ['h'] =  h
 
 #### Modelo = 3
 x = x, y = y, z = z, h = h
