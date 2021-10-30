@@ -79,10 +79,10 @@ AddEventHandler("toogleModel",function()
 	if user_id then
 		if choiceModel == 3 then
 			choiceModel = 1
-			TriggerClientEvent("Notify",source,"amarelo","Modelo alterado.",5000)
 		else 
 			choiceModel = choiceModel + 1
 		end
+		TriggerClientEvent("Notify",source,"amarelo","Modelo alterado.",5000)
     end	
 end)
 
