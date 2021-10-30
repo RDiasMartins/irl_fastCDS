@@ -62,7 +62,7 @@ AddEventHandler("sendCDS",function()
 		
 		elseif choiceModel == 2 then
 			msg = "```prolog\n['x'] = "..x..", ['y'] = "..y..", ['z'] = "..z..", ['h'] = "..h.."\r```"
-		elseif choiseModel == 3 then
+		elseif choiceModel == 3 then
 			msg = "```prolog\nx = "..x..", y = "..y..", z = "..z..", h = "..h.."\r```"
 		end
 
